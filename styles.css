@@ -6,27 +6,27 @@ body {
     background-color: #f4f4f4;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+.header {
+    background: url('background-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
 }
 
-.header {
-    background: #333;
-    color: #fff;
-    padding: 2em 0;
-    text-align: center;
+.header .container {
+    position: relative;
 }
 
 .header img {
     border-radius: 50%;
-    margin-bottom: 20px;
     width: 150px;
     height: 150px;
+    margin-bottom: 20px;
 }
 
 .header h1 {
     font-size: 2.5em;
+    margin: 0;
 }
 
 .header p {
@@ -48,8 +48,13 @@ body {
 }
 
 .section {
-    padding: 2em 0;
+    padding: 60px 0;
     text-align: center;
+    background-color: #fff;
+}
+
+.section.about {
+    background-color: #f4f4f4;
 }
 
 .section h2 {
@@ -72,7 +77,17 @@ body {
     margin-bottom: 10px;
 }
 
-.section.contact .social-icons {
+.section.contact {
+    background-color: #333;
+    color: #fff;
+}
+
+.section.contact p a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-icons {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -80,11 +95,10 @@ body {
 
 .social-icons a {
     margin: 0 10px;
-    color: #333;
+    color: #fff;
     font-size: 24px;
 }
 
 .social-icons a:hover {
-    color: #0066cc;
+    color: #ccc;
 }
-
