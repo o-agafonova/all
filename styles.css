@@ -1,104 +1,81 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
 }
 
-.header {
-    background: url('background-image.jpg') no-repeat center center/cover;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
 
-.header .container {
-    position: relative;
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.header img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 20px;
-}
-
-.header h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-.header p {
-    font-size: 1.2em;
-}
-
-.header .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #0066cc;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.header .btn:hover {
-    background: #005bb5;
-}
-
-.section {
-    padding: 60px 0;
-    text-align: center;
-    background-color: #fff;
-}
-
-.section.about {
-    background-color: #f4f4f4;
-}
-
-.section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.section p, .section ul {
-    font-size: 1.1em;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.section ul {
+header nav ul {
+    display: flex;
     list-style: none;
-    padding: 0;
 }
 
-.section ul li {
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+#hero img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
     margin-bottom: 10px;
 }
 
-.section.contact {
-    background-color: #333;
-    color: #fff;
+.hero-text p {
+    margin-bottom: 20px;
 }
 
-.section.contact p a {
-    color: #fff;
-    text-decoration: underline;
+.hero-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    text-decoration: none;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+section {
+    padding: 20px;
 }
 
-.social-icons a {
-    margin: 0 10px;
-    color: #fff;
-    font-size: 24px;
+section h2 {
+    margin-bottom: 10px;
+    color: #333;
 }
 
-.social-icons a:hover {
-    color: #ccc;
+section p {
+    margin-bottom: 10px;
+}
+
+#contacts p {
+    margin-bottom: 5px;
 }
