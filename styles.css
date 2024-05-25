@@ -1,81 +1,146 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
     background-color: #333;
-    color: white;
-}
-
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
 }
 
 header nav ul {
-    display: flex;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 header nav ul li {
-    margin-left: 20px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 #hero {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background: #f4f4f4;
+    background-color: #eee;
+    text-align: center;
+    padding: 50px 20px;
 }
 
-#hero img {
+.hero-photo {
+    border-radius: 50%;
     width: 200px;
-    margin-right: 20px;
-}
-
-.hero-text {
-    max-width: 600px;
-}
-
-.hero-text h1 {
-    margin-bottom: 10px;
-}
-
-.hero-text p {
+    height: 200px;
     margin-bottom: 20px;
 }
 
-.hero-text .btn {
-    display: inline-block;
+#hero .hero-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+#hero .hero-text p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+#hero .hero-text .btn {
+    background-color: #0066cc;
+    color: #fff;
     padding: 10px 20px;
-    background: #333;
-    color: white;
     text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin: 10px 5px;
 }
 
-section {
-    padding: 20px;
+#hero .hero-text .btn:hover {
+    background-color: #005bb5;
 }
 
-section h2 {
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
     margin-bottom: 10px;
+}
+
+.section.cost .cost-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section.cost .btn {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 1.1em;
+    display: block;
+    width: auto;
+}
+
+.section.cost .btn:hover {
+    background-color: #e68900;
+}
+
+.section.contact .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.section.contact .social-icons a {
+    margin: 0 10px;
     color: #333;
+    font-size: 36px;
 }
 
-section p {
-    margin-bottom: 10px;
+.section.contact .social-icons a:hover {
+    color: #0066cc;
 }
 
-#contacts p {
-    margin-bottom: 5px;
+.donate {
+    background-color: #d32f2f;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.donate:hover {
+    background-color: #b71c1c;
 }
