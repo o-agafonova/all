@@ -39,6 +39,15 @@ header nav ul li a:hover {
     background-color: #eee;
     text-align: center;
     padding: 50px 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 100px 20px;
 }
 
 .hero-photo {
@@ -59,7 +68,7 @@ header nav ul li a:hover {
 }
 
 #hero .hero-text .btn {
-    background-color: #0066cc;
+    background-color: #ff9800;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -69,7 +78,7 @@ header nav ul li a:hover {
 }
 
 #hero .hero-text .btn:hover {
-    background-color: #005bb5;
+    background-color: #e68900;
 }
 
 .section {
